@@ -5,7 +5,7 @@
     <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <body>
-    <form id="portalForm" action="contactForm.php" method="POST">
+  <form id="portalForm" method="POST" onsubmit="return validateForm();">
       <!--onsubmit="return validateForm();"-->
         <h1>Register Form</h1>
         <div class="input-container">
@@ -18,16 +18,16 @@
         </div>
         <div class="input-container">
           <i class="fa fa-envelope icon"></i>
-          <input class="input-field" type="email" placeholder="Email" id="userEmail" name="email" required>
+          <input class="input-field" type="email" placeholder="Email" id="userEmail" name="email">
         </div>
         <div class="input-container">
           <i class="fa fa-key icon"></i>
-          <input class="input-field" type="text" placeholder="Site Manager" id="siteMgr" name="mgr" required>
+          <input class="input-field" type="text" placeholder="Site Manager" id="siteMgr" name="mgr">
         </div>
         
         <div class="input-container">
           <i class="fa fa-user icon"></i>
-          <input class="input-field" type="number" placeholder="Site Number" id="siteNumber" name="siteNr" required>
+          <input class="input-field" type="number" placeholder="Site Number" id="siteNumber" name="siteNr">
         </div> 
         <h4>Page to Load on Startup</h4>
         <h5>Add an URL or choose from the available profile:</h5>
