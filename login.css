@@ -1,0 +1,67 @@
+* {box-sizing: border-box;}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position:relative;
+    background:#40464b;
+    height:100%;
+    padding:40px 30%;
+    margin:0;
+  /*  position:relative;
+    background: url(BG_Login.jpg);
+    background-size: cover;    
+    height:100%;
+    padding:40px 30%;
+    margin:0;*/
+}
+
+
+h1, h2, h4 {
+  color: white;
+   
+}
+h3, h4 {
+  color: white;
+  margin: 0px;
+     
+}
+h5 {
+  color: grey;
+  margin: 0px;
+ 
+}
+
+.signin {
+background: rgba(155, 197, 221, 0.15);
+padding: 40px;
+width: 250px;
+margin: auto;
+margin-top: 80px;
+height: 400px;
+margin-left: 180px;
+}
+
+/* Style the input fields */
+.input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+  }
+  
+  .input-field:focus {
+    border: 2px solid dodgerblue;
+  }
+
+/* Set a style for the submit button */
+.btn {
+    background-color: dodgerblue;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .btn:hover {
+    opacity: 1;
+  } 

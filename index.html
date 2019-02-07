@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IKEA Kiosk Portal</title>    
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+    <form id="portalForm" action="contactForm.php" method="POST">
+      <!--onsubmit="return validateForm();"-->
+        <h1>Register Form</h1>
+        <div class="input-container">
+          <i class="fa fa-user icon"></i>
+          <input class="input-field" type="text" placeholder="Username" id="userName" name="usrnm">
+        </div>
+        <div class="input-container">
+          <i class="fa fa-user icon"></i>
+          <input class="input-field" type="tel" placeholder="Mobile" id="userMobile" name="mobile">
+        </div>
+        <div class="input-container">
+          <i class="fa fa-envelope icon"></i>
+          <input class="input-field" type="email" placeholder="Email" id="userEmail" name="email" required>
+        </div>
+        <div class="input-container">
+          <i class="fa fa-key icon"></i>
+          <input class="input-field" type="text" placeholder="Site Manager" id="siteMgr" name="mgr" required>
+        </div>
+        
+        <div class="input-container">
+          <i class="fa fa-user icon"></i>
+          <input class="input-field" type="number" placeholder="Site Number" id="siteNumber" name="siteNr" required>
+        </div> 
+        <h4>Page to Load on Startup</h4>
+        <h5>Add an URL or choose from the available profile:</h5>
+        <!--<h4>Pages to Load on Startup</h4>
+        <h5>Put each URL on its own line, follow example:<br>https://www.example.com<br>https://www.something.com</h5>
+        <br>-->
+        <br>
+        <div class="input-container">
+        <input type="radio" id="r1" name="rr" onclick="check();"/>
+          <label for="r1"><span></span>Popup Store</label>    
+        </div>
+        <!--
+        <div class="input-container">
+          <input type="radio" id="r2" name="rr" />
+          <label for="r2"><span></span>Radio Button 2</label>
+          </div>  
+        -->
+        <!--
+        <br>
+        <select name="Profiles">
+          <option value="none">None</option>
+          <option value="webApp1">VALLENTUNA</option>
+          </select>
+          -->
+        <div class="input-container">
+          <i class="fa fa-key icon"></i>
+          <textarea id ="textArea" name="textBox" placeholder="Add https://..." required></textarea>   
+        </div>
+     
+      <h2>Configuration Settings</h2>
+       <div class="input-container">
+         <label>
+       <input type="checkbox" id="c1" name="HomeBtn" />
+          <label for="c1"><span></span>Home button</label>
+          <p>
+          <input type="checkbox" id="c2" name="PrintBtn" />
+          <label for="c2"><span></span>Print</label>
+          <p><br/>
+            </label>
+      </div>
+        <button type="submit" name="submit" class="btn">Submit</button>
+        
+      </form> 
+  <script src="./jscode.js"></script>
+</body>
+</html>
