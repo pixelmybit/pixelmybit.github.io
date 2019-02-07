@@ -26,6 +26,8 @@ function validateForm()
    {
         textAreaBox = "https://www.ikea.com/se/sv/?ikeakokpopup";
    }
+
+   header("Location: index.html");
 }
 
 function check()
